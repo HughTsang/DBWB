@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WBVisitorView" customModule="DBWeibo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="color_circle_400" translatesAutoresizingMaskIntoConstraints="NO" id="Qvc-hv-6br" userLabel="转盘">
+                    <rect key="frame" x="87" y="134" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="V0s-7B-KzQ"/>
+                        <constraint firstAttribute="height" constant="200" id="p3k-4q-Qo7"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ASL-n0-N29" userLabel="背景">
+                    <rect key="frame" x="0.0" y="284" width="375" height="50"/>
+                    <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="FAD-gj-NgV"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house_300*270" translatesAutoresizingMaskIntoConstraints="NO" id="1Xj-l4-SNT" userLabel="图标">
+                    <rect key="frame" x="112" y="166" width="150" height="135"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="ISv-YL-HWU"/>
+                        <constraint firstAttribute="height" constant="135" id="oUr-43-rYP"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关注一些人,回这里看看有什么惊喜" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5r-Xa-4eg" userLabel="提示的Label">
+                    <rect key="frame" x="62" y="354" width="250" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="cum-MC-WqA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08I-G6-zNp">
+                    <rect key="frame" x="62" y="434" width="100" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="kBZ-CO-RqR"/>
+                        <constraint firstAttribute="height" constant="44" id="n1j-is-SKc"/>
+                    </constraints>
+                    <state key="normal" title="注册" backgroundImage="button_background_72">
+                        <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mq5-RZ-PoU">
+                    <rect key="frame" x="212" y="434" width="100" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="T71-cJ-eNT"/>
+                        <constraint firstAttribute="width" constant="100" id="hWW-In-wj3"/>
+                    </constraints>
+                    <state key="normal" title="登录" backgroundImage="button_background_72">
+                        <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1Xj-l4-SNT" firstAttribute="centerY" secondItem="Qvc-hv-6br" secondAttribute="centerY" id="0bw-8y-V2D"/>
+                <constraint firstItem="Mq5-RZ-PoU" firstAttribute="trailing" secondItem="I5r-Xa-4eg" secondAttribute="trailing" id="5cJ-7T-2Oq"/>
+                <constraint firstAttribute="trailing" secondItem="ASL-n0-N29" secondAttribute="trailing" id="992-7b-0hE"/>
+                <constraint firstItem="ASL-n0-N29" firstAttribute="top" secondItem="Qvc-hv-6br" secondAttribute="bottom" constant="-50" id="9eU-AV-DNA"/>
+                <constraint firstItem="1Xj-l4-SNT" firstAttribute="centerX" secondItem="Qvc-hv-6br" secondAttribute="centerX" id="Eim-gk-hhv"/>
+                <constraint firstItem="Qvc-hv-6br" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="KrZ-MK-UpP"/>
+                <constraint firstItem="ASL-n0-N29" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Nrh-vE-qTZ"/>
+                <constraint firstItem="08I-G6-zNp" firstAttribute="top" secondItem="Qvc-hv-6br" secondAttribute="bottom" constant="100" id="QMa-92-n5h"/>
+                <constraint firstItem="08I-G6-zNp" firstAttribute="leading" secondItem="I5r-Xa-4eg" secondAttribute="leading" id="Uoy-25-VlN"/>
+                <constraint firstItem="I5r-Xa-4eg" firstAttribute="centerX" secondItem="Qvc-hv-6br" secondAttribute="centerX" id="egf-xK-qEb"/>
+                <constraint firstItem="I5r-Xa-4eg" firstAttribute="top" secondItem="Qvc-hv-6br" secondAttribute="bottom" constant="20" id="jod-6D-JL1"/>
+                <constraint firstItem="Mq5-RZ-PoU" firstAttribute="top" secondItem="Qvc-hv-6br" secondAttribute="bottom" constant="100" id="zPu-IF-2Uu"/>
+                <constraint firstItem="Qvc-hv-6br" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-100" id="zTt-BC-6wG"/>
+            </constraints>
+            <connections>
+                <outlet property="iconView" destination="1Xj-l4-SNT" id="sy4-cP-bOM"/>
+                <outlet property="loginBtn" destination="Mq5-RZ-PoU" id="dT3-aF-GZK"/>
+                <outlet property="registerBtn" destination="08I-G6-zNp" id="upo-Vv-VHP"/>
+                <outlet property="rotationView" destination="Qvc-hv-6br" id="17j-Ye-lnK"/>
+                <outlet property="tipLabel" destination="I5r-Xa-4eg" id="ngg-v4-vuR"/>
+            </connections>
+            <point key="canvasLocation" x="26.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="button_background_72" width="9" height="36"/>
+        <image name="color_circle_400" width="200" height="200"/>
+        <image name="house_300*270" width="150" height="135"/>
+    </resources>
+</document>

@@ -1,0 +1,26 @@
+[
+ {
+ "vcName" : "WBHomeViewController",
+ "title" : "首页",
+ "imageName" : "bar_well_chosen_unchecked",
+ "selectedImageName" : "bar_well_chosen_checked",
+ },
+ {
+ "vcName" : "WBMessageViewController",
+ "title" : "消息",
+ "imageName" : "bar_choose_buy_unchecked",
+ "selectedImageName" : "bar_choose_buy_checked",
+ },
+ {
+ "vcName" : "WBDiscoverViewController",
+ "title" : "发现",
+ "imageName" : "bar_cart_unchecked",
+ "selectedImageName" : "bar_cart_checked",
+ },
+ {
+ "vcName" : "WBProfileViewController",
+ "title" : "我",
+ "imageName" : "bar_account_unchecked",
+ "selectedImageName" : "bar_account_checked",
+ },
+]
