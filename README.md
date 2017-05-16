@@ -13,6 +13,8 @@
 ```
 `项目使用了cocoapods,项目clone之后执行pod install即可`
 
-> 1.在WBOAuthViewController.swift中fillItemClick方法中设置默认的账号密码,在登录页面使用"填充"按钮可使用,不设置也可以 
-> 2.在Common.swift中,可以填写自己的app_key,app_secret和redirect_uri.  
-> 具体参数的获取可以登录新浪开放平台自己获取http://open.weibo.com
+```
+ 1.在WBOAuthViewController.swift中fillItemClick方法中设置默认的账号密码,在登录页面使用"填充"按钮可使用,不设置也可以.
+ 2.在Common.swift中,可以填写自己的app_key,app_secret和redirect_uri.
+ 具体参数的获取可以登录新浪开放平台自己获取http://open.weibo.com
+```
