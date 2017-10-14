@@ -10,7 +10,7 @@ import UIKit
 class Emoticon: NSObject {
 
     // MARK: - 定义属性
-    var code: String? {  // emoji的code
+    @objc var code: String? {  // emoji的code
         didSet{
             guard let code = code else {
                 return
@@ -30,7 +30,7 @@ class Emoticon: NSObject {
             emojiCode = String(c)
         }
     }
-    var png: String? {   // 普通表情对应的图片名字
+    @objc var png: String? {   // 普通表情对应的图片名字
         didSet{
             guard let png = png else {
                 return
@@ -39,13 +39,13 @@ class Emoticon: NSObject {
             pngPath = Bundle.main.bundlePath + "/Emoticons.bundle/" + png
         }
     }
-    var chs: String?    // 普通表情对应的文字
+    @objc var chs: String?    // 普通表情对应的文字
     
     // MARK: - 数据处理
-    var pngPath: String?
-    var emojiCode: String?
-    var isRemove: Bool = false
-    var isEmpty: Bool = false
+    @objc var pngPath: String?
+    @objc var emojiCode: String?
+    @objc var isRemove: Bool = false
+    @objc var isEmpty: Bool = false
     
     // MARK: - 自定义构造函数
     init(dict: [String : String]) {

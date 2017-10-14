@@ -25,6 +25,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //设置全局颜色
         UITabBar.appearance().tintColor = UIColor.black
         UINavigationBar.appearance().tintColor = UIColor.orange
+       
+        // 判断是否是iPhone X
+        if UIScreen.main.bounds.height == 812.0 {
+            kTabBarHeight = 49 + 34
+        }
         
         //创建window
         window = UIWindow(frame: UIScreen.main.bounds)

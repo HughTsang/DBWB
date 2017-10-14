@@ -12,27 +12,27 @@ class WBStatus: NSObject {
 
     // MARK: - 属性
     /// 微博创建时间
-    var created_at: String?
+    @objc var created_at: String?
     /// 微博来源
-    var source: String?
+    @objc var source: String?
     /// 微博的正文
-    var text: String?
+    @objc var text: String?
     /// 微博的ID
-    var mid: Int = 0
+    @objc var mid: Int = 0
     /// 用户信息
-    var user: WBUser?
+    @objc var user: WBUser?
     /// 微博的配图
-    var pic_urls: [[String : String]]?
+    @objc var pic_urls: [[String : String]]?
 
     /// 缩略图
-    var thumbnail_pic: String?
+    @objc var thumbnail_pic: String?
     /// 微博单张配图时候的中等质量的图
-    var bmiddle_pic: String?
+    @objc var bmiddle_pic: String?
     /// 原图
-    var original_pic: String?
+    @objc var original_pic: String?
     
     /// 微博对应的转发微博
-    var retweeted_status: WBStatus?
+    @objc var retweeted_status: WBStatus?
     
     // MARK: - 自定义构造函数
     init(dict: [String : AnyObject]) {

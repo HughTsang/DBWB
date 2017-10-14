@@ -11,10 +11,10 @@ import UIKit
 class WBPopverAnimator: NSObject {
 
     // MARK: - 对外提供的属性
-    var isPresented: Bool = false
-    var presentedFrame: CGRect = CGRect.zero
+    @objc var isPresented: Bool = false
+    @objc var presentedFrame: CGRect = CGRect.zero
     
-    var callBack: ((_ isPresented: Bool) -> ())?
+    @objc var callBack: ((_ isPresented: Bool) -> ())?
     
     //注意: 如果自定义了一个构造函数,但是没有对默认的构造函数init()进行重写,那么自定义的构造函数会覆盖默认的init()构造函数
     // MARK: - 自定义构造函数

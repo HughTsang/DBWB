@@ -135,7 +135,7 @@ extension WBHomeViewController {
         popoverVC.modalPresentationStyle = .custom
         
         //3.设置转场代理
-        popverAnimator.presentedFrame = CGRect(x: 50, y: 60, width: 180, height: 250)
+        popverAnimator.presentedFrame = CGRect(x: 50, y: kNavBarHeight, width: 180, height: 250)
         popoverVC.transitioningDelegate = popverAnimator
         
         //4.弹出控制器
