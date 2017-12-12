@@ -70,7 +70,7 @@ extension UITextView {
         let range = NSMakeRange(0, attrMStr.length)
         attrMStr.enumerateAttributes(in: range, options: []) { (dict, range, _) in
             
-            if let attachment = dict["NSAttachment"] as? EmoticonAttachment {
+            if let attachment = dict[NSAttributedStringKey.attachment] as? EmoticonAttachment {
                 
                 attrMStr.replaceCharacters(in: range, with: attachment.chs!)
             }

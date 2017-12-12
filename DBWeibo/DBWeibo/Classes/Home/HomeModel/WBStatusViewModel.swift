@@ -11,24 +11,24 @@ import UIKit
 class WBStatusViewModel: NSObject {
 
     // MARK: - 定义属性
-    var status: WBStatus?
+    @objc var status: WBStatus?
     
-    var cellHeight: CGFloat = 0
+    @objc var cellHeight: CGFloat = 0
     
     // MARK: - 对数据处理的属性
     /// 微博来源处理之后的数据
-    var sourceText: String?
+    @objc var sourceText: String?
     /// 微博创建时间处理之后的数据
-    var createdAtText: String?
+    @objc var createdAtText: String?
     
     /// 处理用户认证图标
-    var verifiedImage: UIImage?
+    @objc var verifiedImage: UIImage?
     /// 处理用户会员等级图标
-    var vipImage: UIImage?
+    @objc var vipImage: UIImage?
     /// 处理用户头像的地址
-    var profileURL: URL?
+    @objc var profileURL: URL?
     /// 处理微博配图的数据
-    var picURLs: [URL] = [URL]()
+    @objc var picURLs: [URL] = [URL]()
     
     // MARK: - 自定义构造函数
     init(status: WBStatus) {

@@ -9,7 +9,7 @@ import UIKit
 
 class EmoticonPackage: NSObject {
 
-    var emoticons: [Emoticon] = [Emoticon]()
+    @objc var emoticons: [Emoticon] = [Emoticon]()
     
     init(id: String) {
         super.init()

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 // TODO: 在这里设置自己的应用授权App Key 和 App Secret
 
@@ -14,6 +15,13 @@ import Foundation
 let app_key = "1571606491"
 let app_secret = "692b9cca4bdbb2ffc4cc9349869f5011"
 let redirect_uri = "http://www.baidu.com"
+
+// MARK: - UI相关
+let kGap = 10
+let kScreenW = UIScreen.main.bounds.width
+let kScreenH = UIScreen.main.bounds.height
+let kNavBarHeight = UIApplication.shared.statusBarFrame.height + 44
+var kTabBarHeight = 49
 
 // MARK: - 选择照片的通知常量
 let PicPickerAddPhotoNoti = "PicPickerAddPhotoNoti"
