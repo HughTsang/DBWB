@@ -165,6 +165,7 @@
 				838C180C5112BDBEC5C6711B /* Pods-DBWeibo.release.xcconfig */,
 			);
 			name = Pods;
+			path = ../../..;
 			sourceTree = "<group>";
 		};
 		EC1374831E5439A20056BA5A = {
@@ -172,7 +173,6 @@
 			children = (
 				EC13748E1E5439A20056BA5A /* DBWeibo */,
 				EC13748D1E5439A20056BA5A /* Products */,
-				E60ABD8978E09BA80E63F77F /* Pods */,
 				4FE2460441C267A5F2114AA9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -228,8 +228,9 @@
 				ECDC679F1EC98DAB007587C3 /* PhotoBrowser */,
 				EC9C19831E56F22800296F33 /* UIPopover */,
 				EC63AFFE1E792546001D75AE /* HomeModel */,
-				ECE612C71E553D04005DF2F4 /* WBHomeViewController.swift */,
+				E60ABD8978E09BA80E63F77F /* Pods */,
 				ECE612DB1E558F43005DF2F4 /* WBHome.storyboard */,
+				ECE612C71E553D04005DF2F4 /* WBHomeViewController.swift */,
 				EC2C7DB51EB07D2300171095 /* WBHomeViewCell.swift */,
 				EC2C7DB71EB1E00C00171095 /* WBPicCollectionView.swift */,
 			);

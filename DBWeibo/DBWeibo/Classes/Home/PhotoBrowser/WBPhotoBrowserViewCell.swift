@@ -48,8 +48,8 @@ extension WBPhotoBrowserViewCell {
     
         // 1.添加子控件
         contentView.addSubview(scroll)
-        contentView.addSubview(progressView)
         scroll.addSubview(imageView)
+        contentView.addSubview(progressView)
         
         // 2.设置Frame
         scroll.frame = contentView.bounds

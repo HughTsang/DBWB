@@ -80,7 +80,7 @@ extension WBPhotoBrowserAnimator: UIViewControllerAnimatedTransitioning {
         transitionContext.containerView.addSubview(imageView)
         imageView.frame = starteRect
         
-        // 3.执行动画
+        // 4.执行动画
         presentedView.alpha = 0;
         transitionContext.containerView.backgroundColor = UIColor.black
         UIView.animate(withDuration: transitionDuration(using: transitionContext), animations: {

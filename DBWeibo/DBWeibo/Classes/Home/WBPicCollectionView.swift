@@ -117,7 +117,7 @@ extension WBPicCollectionView: AnimatorPresentedDelegate {
             return imageView
         }
         
-        //设置imageView的属性
+        // 3.设置imageView的属性
         imageView.image = image
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
